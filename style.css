@@ -1,0 +1,105 @@
+body {
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+main {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.form-part {
+    background-color: white;
+    color: black;
+    padding: 2em;
+    height: 40vw;
+    border-radius: 20px;
+}
+
+
+form div,
+form #name,
+form #age {
+    margin-bottom: 1em;
+}
+
+form label {
+    width: 6em;
+    text-align: left;
+    float: left;
+}
+
+form #name,
+form #realname,
+form #age {
+    width: 15em;
+    height: 2em;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.24)
+}
+
+form #powers-legend,
+form #sex-legend {
+    font-weight: bolder;
+    font-size: 1.07em;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+}
+
+form .submit {
+    background-color: rgba(201, 191, 191, 0.199);
+    margin-top: 3em;
+    width: 10em;
+    height: 2.5em;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.13);
+    display: block;
+    margin-left: auto;
+    margin-right: 5em;
+}
+
+.list {
+    background-color: rgba(0, 0, 0, 0.712);
+    padding: 1em;
+}
+
+.list #header {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.39);
+}
+
+.list #header p {
+    flex-basis: 200px;
+}
+
+.hero {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.hero:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.39);
+}
+
+.hero * {
+    flex-basis: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hero .realname {
+    font-size: 1em;
+}
+
+
+.hero button {
+    height: 2.5em;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.13);
+}

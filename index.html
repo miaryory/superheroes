@@ -1,26 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Superheroes</title>
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <template>
+      <article class="hero">
         <h1 class="name"></h1>
         <h2 class="realname"></h2>
         <p class="powers"></p>
         <p class="age"></p>
+        <p class="sex"></p>
+        <button>Delete</button>
+      </article>
     </template>
 
-    <div class="list"></div>
-    <button>Add superhero</button>
+    <main>
+      <div class="list">
+        <div id="header">
+          <p>Name</p>
+          <p>Real Name</p>
+          <p>Powers</p>
+          <p>Age</p>
+          <p>Sex</p>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="form-part">
+        <h1>Add a new hero</h1>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+
+          <div>
+            <label for="realname">Real Name</label>
+            <input type="text" name="realname" id="realname" />
+          </div>
+
+          <label for="age">Age</label>
+          <input type="number" min="18" name="age" id="age" required />
+
+          <div class="powers">
+            <div><label id="powers-legend">Powers:</label><br /></div>
+
+            <div>
+              <label for="strength">Strength</label>
+              <input type="checkbox" name="strength" value="Strength" />
+            </div>
+
+            <div>
+              <label for="fly">Fly</label>
+              <input type="checkbox" name="fly" value="Fly" />
+            </div>
+
+            <div>
+              <label for="speed">Speed</label>
+              <input type="checkbox" name="speed" value="Speed" />
+            </div>
+
+            <div>
+              <label for="xray">X-Ray</label>
+              <input type="checkbox" name="xray" value="X-Ray" />
+            </div>
+          </div>
+
+          <div>
+            <div><label id="sex-legend">Sex:</label><br /></div>
+
+            <div>
+              <input type="radio" id="female" name="sex" value="female" checked />
+              <label for="female">Female</label>
+            </div>
+
+            <div>
+              <input type="radio" id="male" name="sex" value="male" />
+              <label for="male">Male</label>
+            </div>
+          </div>
+
+          <input class="submit" type="button" value="Add hero" />
+        </form>
+      </div>
+    </main>
 
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
